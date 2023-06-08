@@ -130,6 +130,11 @@ table {
 
 /* CSS RESET */
 
+@font-face {
+  font-family: fancy;
+  src: url(../assets/fonts/HomemadeApple-Regular.ttf);
+}
+
 body {
   overflow: hidden;
 }
@@ -140,27 +145,54 @@ body {
   --content-colour: #fff;
   --item-title-colour: #ec6091;
   --item-content-colour: #da2864;
+
+  display: grid;
+  grid-template-columns: 1fr 6fr;
 }
 
 .header {
+  grid-column: 1 / 3;
   display: flex;
-  height: 100px;
+  height: 115px;
+  justify-content: start;
+  align-items: center;
 
   background-color: var(--header-colour);
 }
 
 .cat-logo {
-  height: 70px;
+  height: 140px;
+  margin-left: 15px;
+}
+
+.title {
+  font-family: fancy;
+  font-size: 60px;
+
+  margin-left: 32%;
+  margin-top: 13px;
 }
 
 .sidebar {
   display: flex;
-  width: 200px;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
 
   background-color: var(--sidebar-colour);
 }
 
+.sidebar > div:first {
+  margin-top: 110px;
+}
+
 .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
   background-color: var(--content-colour);
+}
+
+.test {
 }

@@ -32,14 +32,38 @@ function createSideBar() {
   const div = document.createElement("div");
   div.classList.toggle("sidebar");
 
+  const text = document.createElement("div");
+  text.classList.toggle("text");
+  text.innerHTML = "Wanna add something new to the list?";
+
+  const textTwo = document.createElement("div");
+  textTwo.classList.toggle("text");
+  textTwo.innerHTML = "Press the button below!";
+
+  const btn = document.createElement("button");
+  btn.classList.toggle("btn");
+  btn.innerHTML = "+";
+
+  div.appendChild(text);
+  div.appendChild(textTwo);
+  div.appendChild(btn);
+
   document.getElementById("container").appendChild(div);
 }
 
 function createContent() {
+  const container = document.getElementById("container");
+
   const div = document.createElement("div");
   div.classList.toggle("content");
 
-  document.getElementById("container").appendChild(div);
+  const test = document.createElement("div");
+  test.innerHTML = "I AM HERE";
+  test.classList.toggle("test");
+
+  div.appendChild(test);
+
+  container.appendChild(div);
 }
 
 export { createPage };
