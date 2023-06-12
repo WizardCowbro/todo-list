@@ -16,8 +16,8 @@ class Task {
     return this.description;
   }
 
-  getDueDate() {
-    return this.dueDate;
+  getPriority() {
+    return this.priority;
   }
 
   getCheckList() {

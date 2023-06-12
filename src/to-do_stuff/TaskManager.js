@@ -5,8 +5,8 @@ class TaskManager {
     this.manager = [];
   }
 
-  addTask(task) {
-    this.manager.push(task);
+  addTask(title, description, priority) {
+    this.manager.push(new Task(title, description, priority));
   }
 
   removeTask(name) {

@@ -13,7 +13,7 @@ class CheckListItem {
     return this.description;
   }
 
-  getIsChecked() {
+  isChecked() {
     return this.isChecked;
   }
 

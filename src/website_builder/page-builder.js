@@ -57,12 +57,6 @@ function createContent() {
   const div = document.createElement("div");
   div.classList.toggle("content");
 
-  const test = document.createElement("div");
-  test.innerHTML = "I AM HERE";
-  test.classList.toggle("test");
-
-  div.appendChild(test);
-
   container.appendChild(div);
 }
 
